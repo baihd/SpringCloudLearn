@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  cloud:
+    gateway:
+      routes:
+      - id: limit_route
+        uri: http://httpbin.org:80/get
+        predicates:
+        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+        filters:
+        - name: RequestRateLimiter
+          args:
+            key-resolver: '#{@ipKeyResolver}'
+            #允许用户每秒处理多少个请求
+            redis-rate-limiter.replenishRate: 10
+            #令牌桶的容量，允许在一秒钟内完成的最大请求数
+            redis-rate-limiter.burstCapacity: 20
