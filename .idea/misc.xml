@@ -8,6 +8,10 @@
         <option value="$PROJECT_DIR$/SpringCloudNacos/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudNacosProvider/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudNacosConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudSentinel/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootDubboProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootDubboInterfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootDubboConsumer/pom.xml" />
       </list>
     </option>
   </component>

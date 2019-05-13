@@ -6,18 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootDubboConsumer" />
+        <module name="SpringBootDubboInterfaces" />
+        <module name="SpringBootDubboProvider" />
         <module name="SpringCloudGateWay" />
         <module name="SpringCloudNacos" />
         <module name="SpringCloudNacosConsumer" />
         <module name="SpringCloudNacosProvider" />
+        <module name="SpringCloudSentinel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBootDubboConsumer" target="1.8" />
+      <module name="SpringBootDubboInterfaces" target="1.8" />
+      <module name="SpringBootDubboProvider" target="1.8" />
+      <module name="SpringCloudDubboClient" target="1.8" />
+      <module name="SpringCloudDubboProvider" target="1.8" />
       <module name="SpringCloudGateWay" target="1.8" />
       <module name="springCloudLearn" target="1.5" />
       <module name="SpringCloudNacos" target="1.8" />
       <module name="SpringCloudNacosConsumer" target="1.8" />
       <module name="SpringCloudNacosProvider" target="1.8" />
+      <module name="SpringCloudSentinel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
