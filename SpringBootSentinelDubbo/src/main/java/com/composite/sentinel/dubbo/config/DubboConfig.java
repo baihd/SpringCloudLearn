@@ -1,5 +1,6 @@
-package com.composite.dubbo.provider.config;
+package com.composite.sentinel.dubbo.config;
 
+import com.alibaba.csp.sentinel.annotation.aspectj.SentinelResourceAspect;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.ProviderConfig;
@@ -21,23 +22,13 @@ public class DubboConfig {
     @Resource(name = "protocolConfig")
     private ProtocolConfig protocolConfig;
 
-    /**
-     * 提供方应用信息
-     *
-     * @return
-     */
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("provider");
+        applicationConfig.setName("provider2");
         return applicationConfig;
     }
 
-    /**
-     * 注册中心
-     *
-     * @return
-     */
     @Bean
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
@@ -47,25 +38,15 @@ public class DubboConfig {
         return registryConfig;
     }
 
-    /**
-     * 用dubbo协议在20880端口暴露服务
-     *
-     * @return
-     */
     @Bean
     public ProtocolConfig protocolConfig() {
         ProtocolConfig protocolConfig = new ProtocolConfig();
         protocolConfig.setName("dubbo");
-        protocolConfig.setPort(20882);
+        protocolConfig.setPort(20880);
         protocolConfig.setDispatcher("all");
         return protocolConfig;
     }
 
-    /**
-     * 服务提供者缺省值配置
-     *
-     * @return
-     */
     @Bean
     public ProviderConfig providerConfig() {
         ProviderConfig providerConfig = new ProviderConfig();
@@ -81,6 +62,11 @@ public class DubboConfig {
         //协议名称
         providerConfig.setProtocol(protocolConfig);
         return providerConfig;
+    }
+
+    @Bean
+    public SentinelResourceAspect sentinelResourceAspect() {
+        return new SentinelResourceAspect();
     }
 
 }

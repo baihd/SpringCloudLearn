@@ -15,8 +15,8 @@ public class ConsumerController {
     private UserService userService;
 
     @GetMapping(value = "/getUserList")
-    public void getUerList() {
+    public String getUerList() {
         List<Map<String, Object>> mapList = userService.getUserList("zhangsan");
-        System.out.println(mapList.size());
+        return mapList.toString();
     }
 }
