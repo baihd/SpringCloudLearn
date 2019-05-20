@@ -43,17 +43,17 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          default: {
-            if (!parseUnknownFieldProto3(
-                input, unknownFields, extensionRegistry, tag)) {
-              done = true;
-            }
-            break;
-          }
           case 10: {
             String s = input.readStringRequireUtf8();
 
             message_ = s;
+            break;
+          }
+          default: {
+            if (!parseUnknownField(
+                input, unknownFields, extensionRegistry, tag)) {
+              done = true;
+            }
             break;
           }
         }
@@ -73,6 +73,7 @@ private static final long serialVersionUID = 0L;
     return HelloServiceProto.internal_static_com_composite_grpc_service_HelloReply_descriptor;
   }
 
+  @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return HelloServiceProto.internal_static_com_composite_grpc_service_HelloReply_fieldAccessorTable
@@ -115,6 +116,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -124,6 +126,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!getMessageBytes().isEmpty()) {
@@ -132,6 +135,7 @@ private static final long serialVersionUID = 0L;
     unknownFields.writeTo(output);
   }
 
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -155,11 +159,10 @@ private static final long serialVersionUID = 0L;
     }
     HelloReply other = (HelloReply) obj;
 
-    boolean result = true;
-    result = result && getMessage()
-        .equals(other.getMessage());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getMessage()
+        .equals(other.getMessage())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @Override
@@ -246,6 +249,7 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
@@ -253,6 +257,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder(HelloReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
@@ -276,6 +281,7 @@ private static final long serialVersionUID = 0L;
       return HelloServiceProto.internal_static_com_composite_grpc_service_HelloReply_descriptor;
     }
 
+    @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return HelloServiceProto.internal_static_com_composite_grpc_service_HelloReply_fieldAccessorTable
@@ -298,6 +304,7 @@ private static final long serialVersionUID = 0L;
               .alwaysUseFieldBuilders) {
       }
     }
+    @Override
     public Builder clear() {
       super.clear();
       message_ = "";
@@ -305,15 +312,18 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
       return HelloServiceProto.internal_static_com_composite_grpc_service_HelloReply_descriptor;
     }
 
+    @Override
     public HelloReply getDefaultInstanceForType() {
       return HelloReply.getDefaultInstance();
     }
 
+    @Override
     public HelloReply build() {
       HelloReply result = buildPartial();
       if (!result.isInitialized()) {
@@ -322,6 +332,7 @@ private static final long serialVersionUID = 0L;
       return result;
     }
 
+    @Override
     public HelloReply buildPartial() {
       HelloReply result = new HelloReply(this);
       result.message_ = message_;
@@ -329,32 +340,39 @@ private static final long serialVersionUID = 0L;
       return result;
     }
 
+    @Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
+    @Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
+    @Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
+    @Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
+    @Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
+    @Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof HelloReply) {
         return mergeFrom((HelloReply)other);
@@ -375,10 +393,12 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
+    @Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -465,11 +485,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
+    @Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
+    @Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -491,6 +513,7 @@ private static final long serialVersionUID = 0L;
 
   private static final com.google.protobuf.Parser<HelloReply>
       PARSER = new com.google.protobuf.AbstractParser<HelloReply>() {
+    @Override
     public HelloReply parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -508,6 +531,7 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
+  @Override
   public HelloReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
