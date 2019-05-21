@@ -1,0 +1,28 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: grpc-server
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+grpc:
+  server:
+    #address: 127.0.0.1
+    port: 9090
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
