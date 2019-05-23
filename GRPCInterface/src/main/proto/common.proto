@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "request.proto";
+import "response.proto";
+
+package com.composite.grpcInterface.service;
+
+option java_outer_classname = "CommonServiceProto";
+option java_multiple_files = true;
+
+service CommonService {
+    rpc commonRequest (com.composite.grpcInterface.base.Request) returns (com.composite.grpcInterface.base.Response) {
+    }
+}
