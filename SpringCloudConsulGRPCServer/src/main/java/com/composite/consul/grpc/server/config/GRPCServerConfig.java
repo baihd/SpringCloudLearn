@@ -15,7 +15,9 @@ public class GRPCServerConfig {
         return serverBuilder -> {
             if (serverBuilder instanceof NettyServerBuilder) {
                 ((NettyServerBuilder) serverBuilder)
+                        //表示TCP链接在多少秒之后没有数据报文传输启动探测报文
                         .keepAliveTime(30, TimeUnit.SECONDS)
+                        //链接保持多少秒
                         .keepAliveTimeout(5, TimeUnit.SECONDS)
                         .permitKeepAliveWithoutCalls(true);
             }
