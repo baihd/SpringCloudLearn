@@ -1,0 +1,23 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: grpc-client
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        register: false
+      config:
+        #开启Consul配置
+        enabled: true
+        #consul上面文件的格式
+        format: yaml
+        #表示consul配置的文件夹前缀
+        prefix: config
+        #表示consul配置的配置文件父路径
+        default-context: ${spring.application.name}
+        #表示consul配置的配置文件名
+        data-key: data
+        #以上配置在consul的key为:config/grpc-client/data
