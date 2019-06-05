@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: grpc-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+grpc:
+  client:
+    grpc-provider:
+      #address: static://127.0.0.1:9090
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+
+server:
+  port: 8055
