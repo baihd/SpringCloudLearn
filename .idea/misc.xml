@@ -12,6 +12,14 @@
         <option value="$PROJECT_DIR$/SpringBootDubboProvider/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootDubboInterfaces/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootDubboConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/GRPC/pom.xml" />
+        <option value="$PROJECT_DIR$/GRPCInterface/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootSentinelDubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootSentinelDubboConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudConsulGrpcClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudConsulGRPCServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudNacosGrpcClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudNacosGrpcServer/pom.xml" />
       </list>
     </option>
   </component>

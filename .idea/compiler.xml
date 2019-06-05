@@ -17,6 +17,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consul-grpc-client" target="1.8" />
+      <module name="consul-grpc-server" target="1.8" />
+      <module name="grpc" target="1.8" />
+      <module name="grpc-interface" target="1.8" />
+      <module name="nacos-grpc-client" target="1.8" />
+      <module name="nacos-grpc-server" target="1.8" />
+      <module name="sentinel-dubbo" target="1.8" />
+      <module name="sentinel-dubbo-consumer" target="1.8" />
       <module name="SpringBootDubboConsumer" target="1.8" />
       <module name="SpringBootDubboInterfaces" target="1.8" />
       <module name="SpringBootDubboProvider" target="1.8" />
@@ -29,5 +37,24 @@
       <module name="SpringCloudNacosProvider" target="1.8" />
       <module name="SpringCloudSentinel" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootDubboConsumer" options="-parameters" />
+      <module name="SpringBootDubboInterfaces" options="-parameters" />
+      <module name="SpringBootDubboProvider" options="-parameters" />
+      <module name="SpringCloudGateWay" options="-parameters" />
+      <module name="SpringCloudNacos" options="-parameters" />
+      <module name="SpringCloudNacosConsumer" options="-parameters" />
+      <module name="SpringCloudNacosProvider" options="-parameters" />
+      <module name="consul-grpc-client" options="-parameters" />
+      <module name="consul-grpc-server" options="-parameters" />
+      <module name="grpc" options="-parameters" />
+      <module name="grpc-interface" options="-parameters" />
+      <module name="nacos-grpc-client" options="-parameters" />
+      <module name="nacos-grpc-server" options="-parameters" />
+      <module name="sentinel-dubbo" options="-parameters" />
+      <module name="sentinel-dubbo-consumer" options="-parameters" />
+    </option>
   </component>
 </project>

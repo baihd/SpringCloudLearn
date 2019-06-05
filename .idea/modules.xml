@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GRPC/GRPC.iml" filepath="$PROJECT_DIR$/GRPC/GRPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GRPCInterface/GRPCInterface.iml" filepath="$PROJECT_DIR$/GRPCInterface/GRPCInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDubboConsumer/SpringBootDubboConsumer.iml" filepath="$PROJECT_DIR$/SpringBootDubboConsumer/SpringBootDubboConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDubboInterfaces/SpringBootDubboInterfaces.iml" filepath="$PROJECT_DIR$/SpringBootDubboInterfaces/SpringBootDubboInterfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDubboProvider/SpringBootDubboProvider.iml" filepath="$PROJECT_DIR$/SpringBootDubboProvider/SpringBootDubboProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootSentinelDubbo/SpringBootSentinelDubbo.iml" filepath="$PROJECT_DIR$/SpringBootSentinelDubbo/SpringBootSentinelDubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootSentinelDubboConsumer/SpringBootSentinelDubboConsumer.iml" filepath="$PROJECT_DIR$/SpringBootSentinelDubboConsumer/SpringBootSentinelDubboConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudConsulGRPCServer/SpringCloudConsulGRPCServer.iml" filepath="$PROJECT_DIR$/SpringCloudConsulGRPCServer/SpringCloudConsulGRPCServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudConsulGrpcClient/SpringCloudConsulGrpcClient.iml" filepath="$PROJECT_DIR$/SpringCloudConsulGrpcClient/SpringCloudConsulGrpcClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudGateWay/SpringCloudGateWay.iml" filepath="$PROJECT_DIR$/SpringCloudGateWay/SpringCloudGateWay.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudNacos/SpringCloudNacos.iml" filepath="$PROJECT_DIR$/SpringCloudNacos/SpringCloudNacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudNacosConsumer/SpringCloudNacosConsumer.iml" filepath="$PROJECT_DIR$/SpringCloudNacosConsumer/SpringCloudNacosConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudNacosGrpcClient/SpringCloudNacosGrpcClient.iml" filepath="$PROJECT_DIR$/SpringCloudNacosGrpcClient/SpringCloudNacosGrpcClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudNacosGrpcServer/SpringCloudNacosGrpcServer.iml" filepath="$PROJECT_DIR$/SpringCloudNacosGrpcServer/SpringCloudNacosGrpcServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudNacosProvider/SpringCloudNacosProvider.iml" filepath="$PROJECT_DIR$/SpringCloudNacosProvider/SpringCloudNacosProvider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringCloudSentinel/SpringCloudSentinel.iml" filepath="$PROJECT_DIR$/SpringCloudSentinel/SpringCloudSentinel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringCoudDubboConsumer/SpringCoudDubboConsumer.iml" filepath="$PROJECT_DIR$/SpringCoudDubboConsumer/SpringCoudDubboConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springCloudLearn.iml" filepath="$PROJECT_DIR$/springCloudLearn.iml" />
     </modules>
   </component>
